@@ -15,13 +15,8 @@ module.exports = (robot) ->
   robot.hear /ping/, (msg) ->
   	msg.send "PONG"
 
-  robot.hear /\bi('|\sa|)m\b\s?back\b|^(back)\b/, (msg) ->
-  	msg.send "Welcome back, Boss!"
-
   robot.respond /you messed up/, (msg) ->
     msg.send "I'm just a ball of fire spiritually bound to another creature. Gimme a break!"
 
   robot.hear /(╯°□°）╯︵ ┻━┻/, (msg) ->
   	msg.send "┬─┬ ノ( ゜-゜ノ)"  
-
-  
