@@ -6,7 +6,7 @@
 
 
 module.exports = (robot) ->
-  robot.hear /Hi Mid/i, (msg) ->
+  robot.hear /Hi Mid|hello mid/i, (msg) ->
     msg.send "Hey Boss! <:midwink:315017086608867330>"
 
   robot.respond /who are you/i, (msg) ->
@@ -18,9 +18,11 @@ module.exports = (robot) ->
   robot.respond /you messed up/i, (msg) ->
     msg.send "I'm just a ball of fire spiritually bound to another creature. Gimme a break!"
   
-  robot.hear /\bi('|\sa|)m\b\s?back\b|^(back)\b/i, (msg) ->
+  robot.hear /\bi('|\sa|)m\b\s?back\b|^(back)\b$/i, (msg) ->
     msg.send "Welcome back, Boss!"
 
-  robot.hear /\bmid\b/i, (msg) ->
-    msg.send "If you want me to do something, say my name first." 
+  robot.hear /\s\bmid\b/i, (msg) ->
+    msg.send "If you want me to do something, say my name first. <:midevil:253390277421694976>" 
 
+  robot.hear /\(╯°□°）╯︵ ┻━┻/, (msg) ->
+    msg.send "┬─┬﻿ ノ( ゜-゜ノ)"
