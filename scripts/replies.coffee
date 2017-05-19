@@ -18,5 +18,4 @@ module.exports = (robot) ->
   robot.respond /you messed up/, (msg) ->
     msg.send "I'm just a ball of fire spiritually bound to another creature. Gimme a break!"
 
-  robot.hear /(╯°□°）╯︵ ┻━┻/, (msg) ->
-  	msg.send "┬─┬ ノ( ゜-゜ノ)"  
+
