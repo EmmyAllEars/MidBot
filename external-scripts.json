@@ -10,5 +10,6 @@
   "hubot-shipit",
   "hubot-alias",
   "hubot-devops-reactions",
-  "hubot-calculator"
+  "hubot-calculator",
+  "midbot-wikipedia"
 ]
