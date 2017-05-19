@@ -21,8 +21,8 @@ module.exports = (robot) ->
   robot.hear /\bi('|\sa|)m\b\s?back\b|^(back)\b$/i, (msg) ->
     msg.send "Welcome back, Boss!"
 
-  robot.hear /\s\bmid\b/i, (msg) ->
-    msg.send "If you want me to do something, say my name first. <:midevil:253390277421694976>" 
+  robot.hear /([^hi] +)mid\b/i, (msg) ->
+    msg.send "Did I hear my name? If you want me to do something, say my name first. <:evilmid:315017086655135747>" 
 
   robot.hear /\(╯°□°）╯︵ ┻━┻/, (msg) ->
-    msg.send "┬─┬﻿ ノ( ゜-゜ノ)"
+    msg.send "Easy there, Boss •••••• ┬─┬﻿ ノ( ＝ω＝ノ)"
