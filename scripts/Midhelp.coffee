@@ -15,9 +15,9 @@ module.exports = (robot) ->
     ]
 
     for text in helptext
-        setInterval ->
+        setTimeout ( ->
             msg.send text
-        , 500
+        ), 500
     
 
     
