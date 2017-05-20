@@ -4,6 +4,7 @@
 module.exports = (robot) ->
 
   robot.respond /help|halp/i, (msg) ->
+
     helptext = [
       "Looks like you need a hand! This is why I'm here.",
       "Also because I'm spiritually bonded to--but hey whatever.",
@@ -21,5 +22,6 @@ module.exports = (robot) ->
       "Last, but not least, 'Mid calculate <expression>' and 'Mid convert <expression> in <units>' lets me do what computers do best--math!",
       "I'll know some jokes and other tricks before too long, so stick around."
     ]
+
     for text in helptext
-	  msg.send text
+	   msg.send text
