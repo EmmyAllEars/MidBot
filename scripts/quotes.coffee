@@ -10,7 +10,6 @@
 # Commands:
 #   hubot quote add <quote> - Saves the quote
 #   hubot quote read # - Reads the quote stored
-#   hubot quote list - Lists all quotes
 #   hubot quote find <string> - Lists all quotes that contain the search string
 #   hubot quote random - Reads a random quote
 #
@@ -47,10 +46,6 @@ module.exports = (robot) ->
         msg.send("##{quoteIndex}: #{quote.quote} - _Added by #{quote.who}_")
       else
         msg.send("Invalid quote.")
-
-  robot.respond /quote list/i, (msg) ->
-    if brainLoaded
-      msg.send("https://tshock-hubot.herokuapp.com/quotes/")
 
   robot.respond /quote find (.*)/i, (msg) ->
     if brainLoaded
