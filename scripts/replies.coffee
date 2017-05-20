@@ -42,12 +42,11 @@ module.exports = (robot) ->
     msg.send "That crackling sound was my laughter." 
 
   robot.respond /tell a joke/i, (msg) ->
-    
     jokes = [
-    "Why did Mid cross the road? Because he was spiritually bound to the chicken!",
-    "What do imps have for breakfast? Devilled eggs!",
-    "Why do demons and ghouls get on so well? Because demons are a ghouls best friends!",
-    "What is the best way to get rid of an imp? Exorcise a lot!"
+      "Why did Mid cross the road? Because he was spiritually bound to the chicken!",
+      "What do imps have for breakfast? Devilled eggs!",
+      "Why do demons and ghouls get on so well? Because demons are a ghouls best friends!",
+      "What is the best way to get rid of an imp? Exorcise a lot!"
     ]
 
     msg.send msg.random jokes
