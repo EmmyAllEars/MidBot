@@ -38,4 +38,4 @@ module.exports = (robot) ->
     msg.send msg.random flips
     setTimeout ( ->
       msg.send "Always clean up your mess •••••• ┬─┬﻿ ノ( ＝ω＝ノ)"
-    ), 3000
+    ), 5000

@@ -35,7 +35,7 @@ module.exports = (robot) ->
   robot.hear /magic/i, (msg) ->
     msg.send "http://reactiongifs.me/wp-content/uploads/2013/08/shia-labeouf-magic-gif.gif"
   
-  robot.hear /^[^a-z]{3,}$/, (msg) ->
+  robot.hear /^\w[^a-z]{3,}$/, (msg) ->
     msg.send "Woah Boss, no reason to shout." 
 
   robot.hear /it was funny/i, (msg) ->
