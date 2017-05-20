@@ -38,5 +38,19 @@ module.exports = (robot) ->
   robot.hear /^[^a-z]{3,}$/, (msg) ->
     msg.send "Woah Boss, no reason to shout." 
 
-  robot.hear /it was funny/, (msg) ->
-    msg.send "That crackling sound was my laughter."   
+  robot.hear /it was funny/i, (msg) ->
+    msg.send "That crackling sound was my laughter." 
+
+  robot.respond /tell a joke/i, (msg) ->
+    
+    jokes = [
+    "Why did Mid cross the road? Because he was spiritually bound to the chicken!",
+    "What do imps have for breakfast? Devilled eggs!",
+    "Why do demons and ghouls get on so well? Because demons are a ghouls best friends!",
+    "What is the best way to get rid of an imp? Exorcise a lot!"
+    ]
+
+    msg.send msg.random jokes
+    setTimeout ( ->
+      msg.send "<:midwink:315017086608867330>"
+    ), 2000
