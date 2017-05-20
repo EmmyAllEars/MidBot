@@ -15,7 +15,7 @@ module.exports = (robot) ->
     ]
 
     for text in helptext
-        setInterval msg.send, 500
+        setInterval msg.send text, 500
     
 
     
