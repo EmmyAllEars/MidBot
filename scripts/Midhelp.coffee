@@ -5,11 +5,11 @@ module.exports = (robot) ->
 
   robot.respond /help|halp/i, (msg) ->
 
-    msg.send "Looks like you need a hand! This is why I'm here. Also because I'm spiritually bonded to--but hey whatever. My name is Mid, and you gotta use it to get results.\n
-    Like 'Mid who are you?' <:mid:315017087405916162>\n
-    Angry? Say 'Mid flip a table!' Bored? Ask 'Mid quote random' to see what people are saying. You can also say 'Mid meme me' for some wholesome entertainment or ask 'Mid what does the fox say?'\n
-    I'm pretty useful for homework, too. I can answer 'Mid time' or 'Mid tell me about <something>'. 'Mid wiki <something>' actually brings back five things!\n
-    Last, but not least, 'Mid calculate <expression>' and 'Mid convert <expression> in <units>' lets me do what computers do best--math!\n
+    msg.send "Looks like you need a hand! This is why I'm here. Also because I'm spiritually bonded to--but hey whatever. My name is Mid, and you gotta use it to get results.\r\n
+    Like 'Mid who are you?' <:mid:315017087405916162>\r\n
+    Angry? Say 'Mid flip a table!' Bored? Ask 'Mid quote random' to see what people are saying. You can also say 'Mid meme me' for some wholesome entertainment or ask 'Mid what does the fox say?'\r\n
+    I'm pretty useful for homework, too. I can answer 'Mid time' or 'Mid tell me about <something>'. 'Mid wiki <something>' actually brings back five things!\r\n
+    Last, but not least, 'Mid calculate <expression>' and 'Mid convert <expression> in <units>' lets me do what computers do best--math!\r\n
     I'll know some jokes and other tricks before too long, so stick around."
 
     

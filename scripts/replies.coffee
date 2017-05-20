@@ -9,9 +9,9 @@ module.exports = (robot) ->
     msg.send "Hey Boss! <:midwink:315017086608867330>"
 
   robot.respond /who are you/i, (msg) ->
-    msg.send "I'm glad you asked! I, Mid, am here to be your gracious and handsome guide. Now I know what you’re thinking, but I assure you no payment is necessary for this service. I do this from the bottom of my heart, which I don’t have, because I am just a (very handsome) ball of fire. <:midheart:315017086655135755>"  
+    msg.send "I'm glad you asked! I, Mid, am here to be your gracious and handsome guide. I do this from the bottom of my heart, which I don’t have, because I am just a (very handsome) ball of fire. <:midheart:315017086655135755>"  
 
-  robot.hear /ping/i, (msg) ->
+  robot.hear /\bping\b/i, (msg) ->
   	msg.send "PONG"
 
   robot.respond /you messed up/i, (msg) ->
@@ -20,7 +20,7 @@ module.exports = (robot) ->
   robot.hear /\bi('|\sa|)m\b\s?back\b|^(back)\b$/i, (msg) ->
     msg.send "Welcome back, Boss!"
 
-  robot.hear /(\w{2,}) (\w{2,}) mid\b/i, (msg) ->
+  robot.hear /(\w{2,}) (\w{2,}) \bmid\b/i, (msg) ->
     msg.send "Did I hear my name? If you want me to do something, say my name first. <:evilmid:315017086655135747>" 
 
   robot.hear /\(╯°□°）╯︵ ┻━┻/, (msg) ->
@@ -35,5 +35,5 @@ module.exports = (robot) ->
   robot.hear /magic/i, (msg) ->
     msg.send "http://reactiongifs.me/wp-content/uploads/2013/08/shia-labeouf-magic-gif.gif"
   
-  robot.hear /^[^a-z]*$/, (msg) ->
+  robot.hear /^[^a-z]{3,}$/, (msg) ->
     msg.send "Woah Boss, no reason to shout." 
