@@ -23,5 +23,4 @@ module.exports = (robot) ->
       "I'll know some jokes and other tricks before too long, so stick around."
     ]
 
-    for text in helptext
-	   msg.send text
+    msg.send text for text in helptext
