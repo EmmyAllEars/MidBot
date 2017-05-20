@@ -21,7 +21,7 @@ module.exports = (robot) ->
     msg.send "Welcome back, Boss!"
 
   robot.hear /(\w{2,}) (\w{2,}) \bmid\b/i, (msg) ->
-    msg.send "Did I hear my name? If you want me to do something, say my name first. <:evilmid:315017086655135747>" 
+    msg.send "My ears are burning <:evilmid:315017086655135747>" 
 
   robot.hear /\(╯°□°）╯︵ ┻━┻/, (msg) ->
     msg.send "Easy there, Boss •••••• ┬─┬﻿ ノ( ＝ω＝ノ)"
@@ -37,3 +37,6 @@ module.exports = (robot) ->
   
   robot.hear /^[^a-z]{3,}$/, (msg) ->
     msg.send "Woah Boss, no reason to shout." 
+
+  robot.hear /it was funny/, (msg) ->
+    msg.send "That crackling sound was my laughter."   
