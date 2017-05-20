@@ -13,6 +13,6 @@ module.exports = (robot) ->
       'ฅ(=චᆽච=ฅ)',
       '‎(=ච㉨ච=)',
       '(=♡ ᆺ ♡=)',
-      '*:･✧(=✪ ᆺ ✪=)*:･✧'
+      '(=✪ ᆺ ✪=)'
     ]
     msg.send msg.random cats
