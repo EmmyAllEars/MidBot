@@ -14,10 +14,8 @@ module.exports = (robot) ->
         "I'll know some jokes and other tricks before too long, so stick around."
     ]
 
-    for text in helptext
-        setTimeout ( ->
-            msg.send text
-        ), 500
+    msg.send text for text in helptext
+        
     
 
     
