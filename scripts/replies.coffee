@@ -34,5 +34,5 @@ module.exports = (robot) ->
     msg.send "ಠ_ಠ"
     
   robot.hear /magic/i, (msg) ->
-    msg.send http://reactiongifs.me/wp-content/uploads/2013/08/shia-labeouf-magic-gif.gif
+    msg.send "http://reactiongifs.me/wp-content/uploads/2013/08/shia-labeouf-magic-gif.gif"
 
