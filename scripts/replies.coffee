@@ -26,3 +26,12 @@ module.exports = (robot) ->
 
   robot.hear /\(╯°□°）╯︵ ┻━┻/, (msg) ->
     msg.send "Easy there, Boss •••••• ┬─┬﻿ ノ( ＝ω＝ノ)"
+
+  robot.hear /(ty|thanks?|ilu|<3) mid/i, (msg) ->
+    msg.send "<:midheart:315017086655135755>"   
+
+  robot.hear /disapprove|poop|butt|wrong/i, (msg) ->
+    msg.send "ಠ_ಠ"
+    
+  robot.hear /magic/i, (msg) ->
+    msg.send " ( ͡ ͠ಠ‿ ಠ)━☆ﾟ.*･｡ﾟ"
