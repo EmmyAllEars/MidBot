@@ -1,12 +1,11 @@
 # Description:
 #   One-off cleverness or helpfulness with Mid's personality
 # Commands:
-#   hubot hi - greeting
 #   hubot who are you - intro
 
 
 module.exports = (robot) ->
-  robot.hear /Hi Mid|hello mid/i, (msg) ->
+  robot.hear /Hi Mid|hello mid|good morning|Mid hi/i, (msg) ->
     msg.send "Hey Boss! <:midwink:315017086608867330>"
 
   robot.respond /who are you/i, (msg) ->
