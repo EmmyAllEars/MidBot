@@ -9,5 +9,6 @@
   "hubot-shipit",
   "hubot-alias",
   "hubot-calculator",
-  "midbot-wikipedia"
+  "midbot-wikipedia",
+  "hubot-subreddit"
 ]

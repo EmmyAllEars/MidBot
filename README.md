@@ -23,14 +23,14 @@ Mid is designed to run on Discord. If you don't want to run him on Discord, you 
 * Quotes
 * What does the fox say?
 * Heroku keepalive
-* Google Translate
-* Pug me
 * Maps
 * Rules
 * Ship it
 * Alias
-* Devops Reactions
 * Calculator
+* Wiki it
+* Table flips and resets
+* Subreddit
 
 
 # Hubot Help
