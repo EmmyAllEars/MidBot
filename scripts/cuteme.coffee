@@ -14,8 +14,7 @@ module.exports = (robot) ->
 
   robot.respond /cute me/i, (msg) ->
 
-    msg.http("https://api.tumblr.com/v2/blog/kittycattoes.tumblr.com/posts/photo")
-      .query(api_key: api_key)
+    msg.http("https://api.tumblr.com/v2/blog/kittycattoes.tumblr.com/posts/photo?api_key=" + api_key)
       .get() (err, res, body) ->
 
         if err
@@ -31,7 +30,7 @@ module.exports = (robot) ->
         posts = content.response.posts
 
         urls = [ ]
-        for photo in post.photos
+        for photo in posts.photos
           urls.push(photo.original_size.url)
 
         if urls.count <= 0
