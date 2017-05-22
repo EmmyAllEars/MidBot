@@ -10,6 +10,7 @@ module.exports = (robot) ->
     Mid flip a table!  ••• I'll flip all the tables you want flipped. \r\n
     Mid quote random ••• See what quotes I've been told to save \r\n
     Mid meme me ••• I'll grab the best memes from reddit for you. \r\n
+    Mid cute me ••• Only the most adorable animals delivered straight to you. \r\n
     Mid what does the fox say?' ••• I hope that's rhetorical. \r\n
     Mid tell a joke ••• I dazzle you with my wit.\r\n
     Mid time ••• I can read a clock! \r\n
