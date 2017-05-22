@@ -38,6 +38,4 @@ module.exports = (robot) ->
           return
 
         rnd = Math.floor(Math.random() * urls.length)
-        picked_url = urls[rnd]
-
-      msg.send picked_url 
+        msg.send urls[rnd] 
