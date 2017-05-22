@@ -40,4 +40,6 @@ module.exports = (robot) ->
           msg.send "Sorry Boss, I couldn't find anything."
           return
 
-        msg.send urls[0]
+        post_url = posts[rnd].post_url
+        picked_url = Math.floor(Math.random() * urls.length)
+        msg.send "Here's something cute and/or fluffy from KittyCatToes Tumblr: " +  urls[picked_url]
