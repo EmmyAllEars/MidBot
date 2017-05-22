@@ -29,7 +29,7 @@ module.exports = (robot) ->
   robot.hear /(ty|thanks?|ilu|<3) mid/i, (msg) ->
     msg.send "<:midheart:315017086655135755>"   
 
-  robot.hear /disapprove|poop|butt|wrong/i, (msg) ->
+  robot.hear /disapprove|poop|butt/i, (msg) ->
     msg.send "ಠ_ಠ"
     
   robot.hear /magic/i, (msg) ->
@@ -38,10 +38,10 @@ module.exports = (robot) ->
   robot.hear /^\w[^a-z]{3,}$/, (msg) ->
     msg.send "Woah Boss, no reason to shout." 
 
-  robot.hear /it was funny/i, (msg) ->
+  robot.hear /(it|that)('s)?\s(was|is)?\s?funny/i, (msg) ->
     msg.send "That crackling sound was my laughter." 
 
-  robot.respond /tell a joke/i, (msg) ->
+  robot.respond /tell\s?(me?)?\s?a\s?joke/i, (msg) ->
     jokes = [
       "Why did Mid cross the road? Because he was spiritually bound to the chicken!",
       "What do imps have for breakfast? Devilled eggs!",
@@ -52,7 +52,7 @@ module.exports = (robot) ->
       "What do you get when you cross a snowman with a vampire? Frostbite.",
       "What do you call a pile of cats? A Meowntain.",
       "You can never lose a homing pigeon - if your homing pigeon doesn't come back what you've lost is a pigeon.",
-      "It’s always hard to explain puns to kleptomaniacs because they’re always taking things literally.",
+      "It’s difficult to explain puns to kleptomaniacs because they’re always taking things literally.",
       "Don't spell part backwards. It's a trap.",
       "Why didn't the skeleton go to prom? Cause he had 'no body' to dance with.",
       "I found a rock yesterday which measured 1760 yards in length. Must be some kind of milestone.",
