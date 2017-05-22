@@ -29,13 +29,15 @@ module.exports = (robot) ->
 
         posts = content.response.posts
 
+        rnd = Math.floor(Math.random() * posts.length)
+        posts[rnd]
+
         urls = [ ]
-        for photo in posts.photos
+        for photo in posts[rnd].photos
           urls.push(photo.original_size.url)
 
         if urls.count <= 0
           msg.send "Sorry Boss, I couldn't find anything."
           return
 
-        rnd = Math.floor(Math.random() * urls.length)
-        msg.send urls[rnd] 
+        msg.send urls[0]
