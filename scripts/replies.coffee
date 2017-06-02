@@ -50,8 +50,8 @@ module.exports = (robot) ->
         return robot.logger.error err
       res.send "#{body}"
       setTimeout ( ->
-      msg.send "<:midwink:315017086608867330>"
-    ), 2000    
+        msg.send "<:midwink:315017086608867330>"
+      ), 2000    
 
 
   robot.respond /tell your favorite jokes/i, (msg) ->
