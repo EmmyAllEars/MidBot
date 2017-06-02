@@ -54,7 +54,7 @@ module.exports = (robot) ->
     ), 2000    
 
 
-  robot.respond /tell\s?(me?)?\s?a\s?joke/i, (msg) ->
+  robot.respond /tell your favorite jokes/i, (msg) ->
     jokes = [
       "Why did Mid cross the road? Because he was spiritually bound to the chicken!",
       "What do imps have for breakfast? Devilled eggs!",
