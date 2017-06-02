@@ -13,6 +13,7 @@ module.exports = (robot) ->
     Mid cute me ••• Only the most adorable animals delivered straight to you. \r\n
     Mid what does the fox say?' ••• I hope that's rhetorical. \r\n
     Mid tell a joke ••• I dazzle you with my wit.\r\n
+    Mid tell your favorite jokes ••• I think that explains itself.\r\n
     Mid time ••• I can read a clock! \r\n
     Mid tell me about <something> ••• Knowledge is power! \r\n
     Mid wiki <something> ••• Five times the knowledge! \r\n
