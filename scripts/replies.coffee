@@ -42,6 +42,19 @@ module.exports = (robot) ->
     msg.send "That crackling sound was my laughter." 
 
   robot.respond /tell\s?(me?)?\s?a\s?joke/i, (msg) ->
+
+    robot.http("https://icanhazdadjoke.com/")
+    .get() (err, response, body) ->
+      if err
+        res.reply "Sorry Boss, there was an error: #{err}"
+        return robot.logger.error err
+      res.send "#{body}"
+      setTimeout ( ->
+      msg.send "<:midwink:315017086608867330>"
+    ), 2000    
+
+
+  robot.respond /tell\s?(me?)?\s?a\s?joke/i, (msg) ->
     jokes = [
       "Why did Mid cross the road? Because he was spiritually bound to the chicken!",
       "What do imps have for breakfast? Devilled eggs!",
@@ -50,15 +63,9 @@ module.exports = (robot) ->
       "What do you call an imp in a hurry? Impatient!",
       "What kind of bees eat brains? Zombees!",
       "What do you get when you cross a snowman with a vampire? Frostbite.",
-      "What do you call a pile of cats? A Meowntain.",
-      "You can never lose a homing pigeon - if your homing pigeon doesn't come back what you've lost is a pigeon.",
-      "It’s difficult to explain puns to kleptomaniacs because they’re always taking things literally.",
-      "Don't spell part backwards. It's a trap.",
       "Why didn't the skeleton go to prom? Cause he had 'no body' to dance with.",
-      "I found a rock yesterday which measured 1760 yards in length. Must be some kind of milestone.",
       "Who did the zombie invite to his party? Anyone he could dig up.",
-      "What's the best way to talk to a monster? From a long way away!",
-      "What keeps YouTubers cool? Their fans!"
+      "What's the best way to talk to a monster? From a long way away!"
     ]
 
     msg.send msg.random jokes
