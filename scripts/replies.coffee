@@ -44,6 +44,7 @@ module.exports = (robot) ->
   robot.respond /tell\s?(me?)?\s?a\s?joke/i, (msg) ->
 
     robot.http("https://icanhazdadjoke.com/")
+    .header('Accept','text/plain')
     .get() (err, response, body) ->
       if err
         msg.send "Sorry Boss, there was an error: #{err}"
