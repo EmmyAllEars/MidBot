@@ -46,9 +46,9 @@ module.exports = (robot) ->
     robot.http("https://icanhazdadjoke.com/")
     .get() (err, response, body) ->
       if err
-        res.reply "Sorry Boss, there was an error: #{err}"
+        msg.send "Sorry Boss, there was an error: #{err}"
         return robot.logger.error err
-      res.send "#{body}"
+      msg.send "#{body}"
       setTimeout ( ->
         msg.send "<:midwink:315017086608867330>"
       ), 2000    
